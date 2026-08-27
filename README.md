@@ -23,9 +23,11 @@ Las imágenes de servicios (cabello, uñas, maquillaje, barbería) usan Unsplash
 
 | Dato | Valor |
 |------|-------|
+| Dirección | Paseo de las Haciendas 254, Jardines de la Hacienda, C.P. 54720, Cuautitlán Izcalli, Estado de México |
 | Teléfono / WhatsApp | +52 55 5194 9067 |
-| Horario | Lunes a domingo, 11:00 – 20:00 h |
+| Horario | Lunes a sábado, 11:00 – 20:00 h · Domingo, 12:00 – 17:00 h |
 | Pagos | Efectivo o transferencia |
+| Tarjeta digital | https://mitarjeta.mx/glowizcalli |
 | Facebook | https://www.facebook.com/share/19QMhgpJza/ |
 | Instagram | https://www.instagram.com/glow.studio.izcalli/ |
 
