@@ -232,7 +232,8 @@ main > section {
   font-size: 0.95rem;
 }
 
-.btn-nav { --btn-pad-y: 12px; --btn-pad-x: 24px; white-space: nowrap; }
+.btn-nav { --btn-pad-y: 12px; --btn-pad-x: 18px; white-space: nowrap; }
+.btn-nav-alt { --btn-pad-y: 12px; --btn-pad-x: 12px; font-size: 0.74rem; letter-spacing: 0.03em; white-space: nowrap; }
 
 .btn-icon { width: 20px; height: 20px; flex-shrink: 0; }
 
@@ -313,7 +314,7 @@ body.loaded #loading-screen {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 24px;
+  gap: 12px;
 }
 
 .brand {
@@ -350,18 +351,18 @@ body.loaded #loading-screen {
 .main-nav {
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 14px;
 }
 .main-nav ul {
   display: flex;
   align-items: center;
-  gap: 26px;
+  gap: 16px;
 }
 .nav-link {
   position: relative;
   font-size: 0.8rem;
   font-weight: 500;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--ink-soft);
   padding-block: 6px;
