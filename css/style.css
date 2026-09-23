@@ -204,15 +204,29 @@ main > section {
 }
 
 .btn-primary {
+  position: relative;
+  overflow: hidden;
   background: var(--gold-grad);
   color: #1a1305;
   box-shadow: 0 10px 30px rgba(184, 134, 11, 0.3);
+}
+.btn-primary::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -60%;
+  width: 40%;
+  height: 100%;
+  background: linear-gradient(115deg, transparent, rgba(255, 255, 255, 0.55), transparent);
+  transform: skewX(-20deg);
+  transition: left 0.65s var(--ease);
 }
 .btn-primary:hover {
   transform: translateY(-3px);
   box-shadow: 0 16px 40px rgba(227, 186, 99, 0.45);
   color: #1a1305;
 }
+.btn-primary:hover::before { left: 130%; }
 
 .btn-outline {
   background: transparent;
@@ -464,6 +478,7 @@ body.loaded #loading-screen {
   line-height: 1.05;
   margin-bottom: 26px;
   letter-spacing: 0.005em;
+  text-shadow: 0 0 48px rgba(227, 186, 99, 0.22);
 }
 
 .hero-typewriter {
@@ -592,7 +607,9 @@ body.loaded #loading-screen {
   overflow: hidden;
   border: 1px solid var(--line);
   box-shadow: var(--shadow-md);
+  transition: box-shadow 0.5s var(--ease);
 }
+.about-media:hover .about-media-frame { box-shadow: var(--shadow-gold); }
 .about-media-frame img {
   width: 100%;
   aspect-ratio: 4 / 5;
@@ -685,6 +702,7 @@ body.loaded #loading-screen {
   overflow: hidden;
   border: 1px solid var(--line);
   box-shadow: var(--shadow-md);
+  transition: box-shadow 0.5s var(--ease);
 }
 .service-cat-media img {
   width: 100%;
@@ -692,6 +710,7 @@ body.loaded #loading-screen {
   object-fit: cover;
   transition: transform 0.9s var(--ease);
 }
+.service-cat-media:hover { box-shadow: var(--shadow-gold); }
 .service-cat-media:hover img { transform: scale(1.05); }
 
 .service-cat-tag {
@@ -807,6 +826,7 @@ body.loaded #loading-screen {
   transform: translateY(-8px);
   border-color: var(--line-strong);
   background: var(--bg-card-hover);
+  box-shadow: var(--shadow-gold);
 }
 .feature-icon {
   width: 56px;
@@ -844,7 +864,7 @@ body.loaded #loading-screen {
   border-radius: var(--radius);
   transition: transform 0.4s var(--ease), border-color 0.4s var(--ease);
 }
-.team-card:hover { transform: translateY(-6px); border-color: var(--line-strong); }
+.team-card:hover { transform: translateY(-6px); border-color: var(--line-strong); box-shadow: var(--shadow-gold); }
 .team-avatar {
   width: 84px;
   height: 84px;
@@ -889,6 +909,11 @@ body.loaded #loading-screen {
   border-radius: var(--radius-sm);
   overflow: hidden;
   border: 1px solid var(--line);
+  transition: box-shadow 0.5s var(--ease), border-color 0.5s var(--ease);
+}
+.gallery-item:hover {
+  border-color: var(--line-strong);
+  box-shadow: var(--shadow-gold);
 }
 .gallery-item img {
   width: 100%;
